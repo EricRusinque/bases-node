@@ -1,22 +1,25 @@
 const fs = require('fs');
 
 
-const createFile = async(base = 5) => {
+const createFile = async(base = 5, list) => {
     
     try {
 
-        console.log('=======================');
-        console.log('  Tabla del:', base);
-        console.log('=======================');
-        
         let output = '';
-    
-    
+        
+        
         for (let i = 1; i <= 10; i++) {
             output += `${base} x ${i} =  ${base * i}\n`;
         }
-    
-        console.log(output);
+        
+        if( list ) {
+            
+            console.log('=======================');
+            console.log('  Tabla del:', base);
+            console.log('=======================');
+                    
+            console.log(output);
+        }
     
         fs.writeFileSync(`tabla-${base}.txt`, output);
     

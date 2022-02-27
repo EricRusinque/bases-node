@@ -1,0 +1,27 @@
+{
+  "name": "02-bases-node",
+  "version": "0.0.1",
+  "description": "multiplication table with text file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base3": "node app --base=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricRusinque/bases-node.git"
+  },
+  "author": "Eric Rusinque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricRusinque/bases-node/issues"
+  },
+  "homepage": "https://github.com/EricRusinque/bases-node#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
