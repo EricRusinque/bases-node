@@ -6,6 +6,6 @@ require('colors');
 // console.clear();
 
 
-createFile( argv.b, argv.l )
+createFile( argv.b, argv.l, argv.t)
     .then( nameFile => console.log(nameFile.rainbow,'Created'))
     .catch( err => console.log(err) );
